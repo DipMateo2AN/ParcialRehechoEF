@@ -12,6 +12,7 @@
         public string RazonSocial {  get; set; }
         public string Direccion { get; set; }
         public string Email { get; set; }
+        public List<Medicamento> Medicamentos { get; set; }
 
         public override string ToString()
         {
