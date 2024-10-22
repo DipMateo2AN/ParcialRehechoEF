@@ -19,6 +19,7 @@ namespace Modelo
         public int Stock { get; set; }
         public int StockMinimo {  get; set; }
         public Monodroga Monodroga { get; set; }
+        public string MonodrogaId { get; set; }
 
         public List<Drogueria> Droguerias { get; set; }
 
