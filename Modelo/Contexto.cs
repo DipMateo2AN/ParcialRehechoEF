@@ -10,8 +10,6 @@ namespace Modelo
 {
     public class Contexto : DbContext
     {
-        private readonly static Lazy<Contexto> instancia = new(() => new Contexto());
-        public static Contexto Instancia = instancia.Value;
         public DbSet<Medicamento> Medicamentos { get; set; }
         public DbSet<Drogueria> Droguerias { get; set; }
         public DbSet<Monodroga> Monodrogas { get; set; }
