@@ -36,7 +36,7 @@ namespace Vista
                     LimpiarCampos();
                     MessageBox.Show("Monodroga agregada correctamente.");
                 }
-                else
+                else 
                 {
                     MessageBox.Show("No se ha podido agregar la monodroga.");
 
