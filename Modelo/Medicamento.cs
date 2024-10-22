@@ -19,13 +19,14 @@ namespace Modelo
         public int Stock { get; set; }
         public int StockMinimo {  get; set; }
         public Monodroga Monodroga { get; set; }
-        
-        private List<Drogueria> Droguerias;
+
+        public List<Drogueria> Droguerias { get; set; }
 
         public Medicamento()
         {
             Droguerias = new List<Drogueria>();
         }
+
 
         public bool AgregarDrogueria(Drogueria nuevaDrogueria)
         {

@@ -14,7 +14,7 @@ namespace Controladora
 
         public bool Agregar(Monodroga nuevaMonodrga)
         {
-            var monodrogaDuplicada = Monodrogas().FirstOrDefault(x => x.Nombre == nuevaMonodrga.Nombre);
+            var monodrogaDuplicada = Monodrogas().FirstOrDefault(x => x.Nombre == nuevaMonodrga.Nombre || x.MonodrogaId == nuevaMonodrga.MonodrogaId);
             if (monodrogaDuplicada == null)
             {
                 RepositorioMonodrogas.Instancia.Agregar(nuevaMonodrga);

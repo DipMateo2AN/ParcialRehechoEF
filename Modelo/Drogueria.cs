@@ -14,6 +14,11 @@
         public string Email { get; set; }
         public List<Medicamento> Medicamentos { get; set; }
 
+        public Drogueria()
+        {
+            Medicamentos = new List<Medicamento>();
+        }
+
         public override string ToString()
         {
             return Cuit.ToString();

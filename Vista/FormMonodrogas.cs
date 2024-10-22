@@ -30,10 +30,18 @@ namespace Vista
                 Monodroga monodroga = new Monodroga();
                 monodroga.Nombre = txtNombre.Text;
                 monodroga.MonodrogaId = txtMonodrogaId.Text;
-                ControladoraMonodrogas.Instancia.Agregar(monodroga);
-                ActualizarGrilla();
-                LimpiarCampos();
-                MessageBox.Show("Monodroga agregada correctamente.");
+                if (ControladoraMonodrogas.Instancia.Agregar(monodroga))
+                {
+                    ActualizarGrilla();
+                    LimpiarCampos();
+                    MessageBox.Show("Monodroga agregada correctamente.");
+                }
+                else
+                {
+                    MessageBox.Show("No se ha podido agregar la monodroga.");
+
+                }
+;
 
             }
             else
